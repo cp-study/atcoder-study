@@ -1,0 +1,8 @@
+1. D - Alter Altar([https://atcoder.jp/contests/abc174/tasks/abc174_d](https://atcoder.jp/contests/abc174/tasks/abc174_d))
+```
+n = int(input())
+wr = input()
+R_cnt = wr.count('R')
+ans = wr.count('W',0,R_cnt)
+print(ans)
+```
