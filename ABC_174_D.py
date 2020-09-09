@@ -1,0 +1,5 @@
+n = int(input())
+wr = input()
+R_cnt = wr.count('R')
+ans = wr.count('W',0,R_cnt)
+print(ans)
