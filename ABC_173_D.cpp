@@ -18,9 +18,7 @@ int main()
 	sort(arr, arr + n);
 
 	int maxim = n - 1;
-	result += arr[maxim];
-
-	for (int i = 2; i < n; i++)
+	for (int i = 1; i < n; i++)
 	{
 		if (i % 2 == 0)
 		{
