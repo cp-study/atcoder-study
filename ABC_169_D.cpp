@@ -17,7 +17,7 @@ int main()
         	}
 	}
 	if(n!=1){
-      ans++;
-    }
+      	 	ans++;
+    	}
 	cout<<ans;
 }
