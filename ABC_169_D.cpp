@@ -13,8 +13,8 @@ int main()
 			ans++;
 		}
 		while(n%i==0){
-          n/=i;
-        }
+          		n/=i;
+        	}
 	}
 	if(n!=1){
       ans++;
