@@ -1,19 +1,11 @@
-N = int(input())
-A = []
+n = int(input()) 
+plus = [] 
+minus = [] 
 
-for i in range(N):
-    x,y = map(int,input().split())
-    A.append([x,y])
-    
-V = [0 for _ in range(N)]
-V1 = [0 for _ in range(N)]
+for i in range(n): 
+    x, y = map(int, input().split()) 
+    plus.append(x + y) 
+    minus.append(x - y) 
 
-for i in range(N):
-    V[i] = A[i][0] + A[i][1]
-    V1[i] = A[i][0] - A[i][1]
-    
-V.sort()
-V1.sort()
-
-maximum = max(V[-1]-V[0],V1[-1]-V1[0])
-print(maximum)
+result = max(max(plus) - min(plus), max(minus) - min(minus)) 
+print(result)
